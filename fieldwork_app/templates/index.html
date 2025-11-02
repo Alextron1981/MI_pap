@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldwork - Управление полевыми работами</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f5f5f5; }
+        .navbar { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .container { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">🚀 Fieldwork - Управление полевыми работами</span>
+            <div>
+                <a href="/admin/" class="btn btn-light btn-sm me-2">Админ-панель</a>
+                <a href="/admin/logout/" class="btn btn-light btn-sm">Выход</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">Добро пожаловать в Fieldwork! ✨</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">Приложение для управления полевыми работами инженеров.</p>
+
+                        <h5 class="mt-4">✅ Что уже готово:</h5>
+                        <ul>
+                            <li>REST API с JWT аутентификацией</li>
+                            <li>Offline режим с синхронизацией</li>
+                            <li>Админ-панель для управления</li>
+                            <li>Загрузка фото и документов</li>
+                            <li>Автоматические акты о выполнении работ</li>
+                        </ul>
+
+                        <h5 class="mt-4">🎯 Следующие шаги:</h5>
+                        <ol>
+                            <li>Откройте <a href="/admin/">админ-панель</a></li>
+                            <li>Создайте инженеров и заявки на работу</li>
+                            <li>Используйте API для интеграции</li>
+                        </ol>
+
+                        <div class="alert alert-info mt-4">
+                            <strong>API доступен по адресу:</strong><br>
+                            <code>/api/fieldwork/</code>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="/admin/" class="btn btn-primary btn-lg">Перейти в админ-панель</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
